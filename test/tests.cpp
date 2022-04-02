@@ -18,7 +18,7 @@ TEST(lab6, test1) {
     pqueue.push(SYM{'g', 1});
 
     SYM c3 = pqueue.pop();
-    SYM c4 = pqueue.pop();    
+    SYM c4 = pqueue.pop();
 
     ASSERT_EQ(c1.ch, 'e');
     ASSERT_EQ(c2.ch, 'b');
