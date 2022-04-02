@@ -27,9 +27,9 @@
 
 ```c++
 struct SYM {
-	char ch;
-	int prior;
-}
+  char ch;
+  int prior;
+};
 ```
 
 ## Выполнение работы
