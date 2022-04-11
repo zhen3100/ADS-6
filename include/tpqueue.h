@@ -12,7 +12,7 @@ class TPQueue {
  private:
     T arr[20];
     int first, last;
-    
+
  public:
     TPQueue() :first(0), last(0) {}
     void push(T x) {
