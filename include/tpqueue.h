@@ -9,11 +9,11 @@ struct SYM {
 };
 template<typename T, int size>
 class TPQueue {
- private:
+  private:
     T arr[20];
     int first, last;
- public:
-    TPQueue() :first(0), last(0) { }
+  public:
+    TPQueue() :first(0), last(0) {}
     void push(T x) {
         if ((last - first) >= size) {
             throw std::string("Full!");
