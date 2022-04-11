@@ -15,11 +15,11 @@ private:
 public:
     TPQueue() :first(0), last(0) { }
     void push(T x) {
-        if (last - first >= size) {
+        if ((last - first) >= size) {
             throw std::string("Full!");
         } else {
             int s = last++;
-            while ((arr[s % size].prior < x.prior) && (--s >= first)) {
+            while ((--s >= first) && (arr[s % size].prior < x.prior)) {
                 arr[(s + 1) % size] = arr[s % size];
             }
             arr[(s + 1) % size] = x;
